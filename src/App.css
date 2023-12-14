@@ -1,38 +1,66 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* text-align: center; */
   display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: 	#005b96;
+}
+
+.container {
+  background: 	#011f4b;
+  display: flex;
+  height: 80vh;
+  border: 1px solid rgb(236, 236, 236);
+  padding: 20px;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 2; */
+  font-size: 20px;
   color: white;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.todoForm {
+  display: flex;
+  justify-content: space-around;
+  width: 450px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  width: 80%;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+}
+
+button {
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  /* background-color: #ffa500; */
+  /* color: white; */
+  margin: 0 5px;
+}
+
+.allList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.singleList {
+  border-radius: 50px;
+  /* background-color: #5dadf8; */
+  background-color: #ffa500;
+  margin: 10px 0;
+  padding: 10px 20px;
+  display: flex;
+  width: 450px;
+  align-items: center;
+}
+
+.singleSpan {
+  flex: 1;
+  
 }
